@@ -131,7 +131,7 @@ $(document).ready(function() {
 				break;
 		}
 		$(".draggable").draggable({
-			grid: [40, 8]
+			//grid: [40, 8]
 		});
 	});
 });

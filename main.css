@@ -13,7 +13,10 @@ body{
 }
 
 #header{
-	background-color:#FF9900;
+	background:#FF9900;
+	background: -webkit-linear-gradient(#FFAE1A, #293f50);
+	background: -moz-linear-gradient(#FFAE1A, #293f50);
+	background: linear-gradient(#FFAE1A, #CCCCCC);
 	text-align:center;
 	height:30%;
 	width:73.5%;
@@ -22,10 +25,13 @@ body{
 
 #sidebar{
 	font-family: Raleway;
-	width:26.3%;
+	width:26.5%;
 	height: 100%;
 	float:right;
-	background-color:#424242;
+	background: #466368;
+	background: -webkit-linear-gradient(left, #648880, #293f50);
+	background: -moz-linear-gradient(right, #648880, #293f50);
+	background: linear-gradient(to right, #648880, #293f50);
     overflow-y: scroll;
     top: 0;
     bottom: 0;
@@ -35,7 +41,7 @@ body{
 	background-color: white;
 	font-family: Raleway;
 	border: .5em solid black;
-	height:60%;
+	height:55%;
 	width:70%;
 	float:left;
 	margin-left:5px;
@@ -112,16 +118,19 @@ h4{
 }
 
 button{
-	background-color: #FF850B;
+	background: #466368;
+	background: -webkit-linear-gradient(#FFB84D, #CC7A00);
+	background: -moz-linear-gradient(#FFB84D, #CC7A00);
+	background: linear-gradient(#FFA31A, #CC7A00);
 	border: 2px solid #666666;
 	margin: 10px;
 
 }
 
 #footer{
-	height:10%;
+	height:15%;
 	width:70%;
-	background-color: #3299BB;
+	background-color: #293f50;
 	float:left;
 	text-align: center;
 }

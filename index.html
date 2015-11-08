@@ -1,0 +1,145 @@
+<!--Copyright (c) 2015 Luke Igel and William Walcher
+
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE. -->
+
+
+
+<!doctype html>
+<html>
+<head>
+	<!--<script type="text/javascript" src="script.js></script>-->
+	<title>CODA</title>
+</head>
+	<body>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src="script.js"></script>
+</head>
+	<body>
+		<div id="header">
+			<h1>C<img src="assets/symbols/coda.png" alt="coda" style="width:.7em;height:.7em;">DA</h1>
+		</div>
+		<div id="sidebar">
+			<h3>Clef selection:</h3>
+			<div>
+				<button id="button39" class="button" type="button"><img src="assets/symbols/cleftreble.png" alt="treble clef" style="width:50px;height:80px;"></button>
+				<button id="button40" class="button" type="button"><img src="assets/symbols/clefbass.png" alt="bass clef" style="width:60px;height:80px;"></button>
+			</div>
+			<h3>Notes:</h3>
+			<div>
+				<button id="button1" class="button" type="button"><img src="assets/symbols/quartnote.png" alt="quarter note" style="width:20px;height:60px;"></button>
+				<button id="button2" class="button" type="button"><img src="assets/symbols/eigthnote.png" alt="eigth note" style="width:30px;height:60px;"></button>
+				<button id="button3" class="button" type="button"><img src="assets/symbols/dottedquarternote.png" alt="dotted quarter" style="width:30px;height:60px;"></button>
+				<button id="button4" class="button" type="button"><img src="assets/symbols/dottedhalfnote.png" alt="dotted half" style="width:30px;height:60px;"></button>
+				<button id="button5" class="button" type="button"><img src="assets/symbols/halfnote.png" alt="half note" style="width:20px;height:60px;"></button>
+				<button id="button6" class="button" type="button"><img src="assets/symbols/sixteenthnote.png" alt="sixteenth note" style="width:30px;height:60px;"></button>
+				<button id="button7" class="button" type="button"><img src="assets/symbols/sixteenthnote4beamed.png" alt="sixteenth note 4 beamed" style="width:80px;height:60px;"></button>
+				<button id="button8" class="button" type="button"><img src="assets/symbols/wholenote.png" alt="whole note" style="width:35px;height:30px;"></button>
+
+			</div>
+			<h3>Rests:</h3>
+			<div>
+				<button id="button9" class="button" type="button"><img src="assets/symbols/quartrest.png" alt="quarter rest" style="width:20px;height:60px;"></button>
+				<button id="button10" class="button" type="button"><img src="assets/symbols/eigthrest.png" alt="eigth rest" style="width:20px;height:60px;"></button>
+				<button id="button11" class="button" type="button"><img src="assets/symbols/sixteenthrest.png" alt="sixteenth rest" style="width:20px;height:60px;"></button>
+				<button id="button12" class="button" type="button"><img src="assets/symbols/wholerest.png" alt="whole rest" style="width:50px;height:25px;"></button>
+				<button id="button13" class="button" type="button"><img src="assets/symbols/halfrest.png" alt="half rest" style="width:50px;height:25px;"></button>
+
+			</div>
+			<h3>Time Signatures:</h3>
+			<div>
+				<button id="button14" class="button" type="button"><img src="assets/symbols/22.png" alt="2 2" style="width:35px;height:65px;"></button>
+				<button id="button15" class="button" type="button"><img src="assets/symbols/24.png" alt="2 4" style="width:35px;height:65px;"></button>
+				<button id="button16" class="button" type="button"><img src="assets/symbols/34.png" alt="3 4" style="width:35px;height:65px;"></button>
+				<button id="button17" class="button" type="button"><img src="assets/symbols/38.png" alt="3 8" style="width:35px;height:65px;"></button>
+				<button id="button18" class="button" type="button"><img src="assets/symbols/44.png" alt="4 4" style="width:35px;height:65px;"></button>
+				<button id="button19" class="button" type="button"><img src="assets/symbols/68.png" alt="6 8" style="width:35px;height:65px;"></button>
+				<button id="button20" class="button" type="button"><img src="assets/symbols/98.png" alt="9 8" style="width:35px;height:65px;"></button>
+				<button id="button21" class="button" type="button"><img src="assets/symbols/128.png" alt="12 8" style="width:35px;height:65px;"></button>
+			</div>
+			<h3>Accidentals:</h3>
+			<div>
+				<button id="button22" class="button" type="button"><img src="assets/symbols/flat.png" alt="flat" style="width:20px;height:65px;"></button>
+				<button id="button23" class="button" type="button"><img src="assets/symbols/doubleflat.png" alt="double flat" style="width:35px;height:65px;"></button>
+				<button id="button24" class="button" type="button"><img src="assets/symbols/natural.png" alt="natural" style="width:20px;height:65px;"></button>
+				<button id="button25" class="button" type="button"><img src="assets/symbols/sharp.png" alt="sharp" style="width:35px;height:65px;"></button>
+				<button id="button26" class="button" type="button"><img src="assets/symbols/doublesharp.png" alt="double sharp" style="width:55px;height:65px;"></button>
+			</div>
+			<h3>Dynamics:</h3>
+			<div>
+				<button id="button27" class="button" type="button"><img src="assets/symbols/piano.png" alt="piano" style="width:35px;height:45px;"></button>
+				<button id="button28" class="button" type="button"><img src="assets/symbols/pianissimo.png" alt="pianissimo" style="width:50px;height:45px;"></button>
+				<button id="button29" class="button" type="button"><img src="assets/symbols/forte.png" alt="forte" style="width:35px;height:45px;"></button>
+				<button id="button30" class="button" type="button"><img src="assets/symbols/fortissimo.png" alt="fortissimo" style="width:45px;height:45px;"></button>
+				<button id="button31" class="button" type="button"><img src="assets/symbols/mezzoforte.png" alt="mezzoforte" style="width:45px;height:45px;"></button>
+				<button id="button32" class="button" type="button"><img src="assets/symbols/mezzopiano.png" alt="mezzopiano" style="width:45px;height:45px;"></button>
+			</div>
+			<h3>Other:</h3>
+			<div>
+				<button id="button33" class="button" type="button"><img src="assets/symbols/coda.png" alt="coda" style="width:55px;height:65px;"></button>
+				<button id="button34" class="button" type="button"><img src="assets/symbols/dalsegno.png" alt="dalsegno" style="width:35px;height:65px;"></button>
+				<button id="button35" class="button" type="button"><img src="assets/symbols/slur.png" alt="slur" style="width:85px;height:35px;"></button>
+				<button id="button36" class="button" type="button"><img src="assets/symbols/turn.png" alt="turn" style="width:85px;height:35px;"></button>
+			</div>
+		</div>
+		<div id="content">
+			<div>
+				<button title="Add a new line" id="button37" class="button" type="button"><span class="fa fa-plus-square fa-3x"></span></button>
+				<button title="Delete a line" id="button38" class="button" type="button"><span class="fa fa-minus-square fa-3x"></span></button>
+				<button title="Add a repeating line" id="button42" class="button" type="button"><span class="fa fa-repeat fa-3x"></span></button>
+				<button title="Add the final line" id="button41" class="button" type="button"><span class="fa fa-stop fa-3x"></span></button>
+			</div>
+		</div>
+	</body>
+</html>
